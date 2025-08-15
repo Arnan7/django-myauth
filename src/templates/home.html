@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<div class="text-center py-16 sm:py-24 lg:py-32">
+    <!-- Título principal con tipografía grande y llamativa -->
+    <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl md:text-6xl">
+        <span class="block">Bienvenido a</span>
+        <span class="block text-blue-600 dark:text-blue-500">AuthApp</span>
+    </h1>
+    <!-- Descripción concisa y atractiva -->
+    <p class="mt-6 max-w-lg mx-auto text-xl text-slate-600 dark:text-slate-400">
+        Una aplicación moderna y segura para gestionar la autenticación de usuarios con Django y Tailwind CSS.
+    </p>
+    <!-- Contenedor de botones de acción, responsivo -->
+    <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center sm:space-x-4">
+        {% if user.is_authenticated %}
+            <!-- Botón principal para usuarios autenticados -->
+            <a href="{% url 'dashboard' %}" class="w-full sm:w-auto flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors">
+                Ir al Dashboard
+            </a>
+        {% else %}
+            <!-- Botones con jerarquía visual: primario (registro) y secundario (login) -->
+            <a href="{% url 'register' %}" class="w-full sm:w-auto flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors">
+                Registrarse
+            </a>
+            <a href="{% url 'login' %}" class="w-full sm:w-auto mt-4 sm:mt-0 flex items-center justify-center px-8 py-3 border border-slate-300 dark:border-slate-600 text-base font-medium rounded-lg text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 md:py-4 md:text-lg md:px-10 transition-colors">
+                Iniciar Sesión
+            </a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+# filepath: .gitignore
+# Entorno virtual de Python
+.venv/
+venv/
+env/
+
+# Archivos de variables de entorno
+.env
+src/.env
+
+# Base de datos SQLite
+db.sqlite3
+src/db.sqlite3
+
+# Caché de Python
+__pycache__/
+*.pyc
+
+# Dependencias de Node.js
+node_modules/
+
+# Directorio de archivos estáticos recolectados
+staticfiles/
+
+# Directorio de GitHub Actions
+.github/
