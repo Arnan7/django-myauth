@@ -1,3 +1,6 @@
+<img width="1600" height="776" alt="image" src="https://github.com/user-attachments/assets/b72b8e79-6612-4649-b32f-c2dd2745b9be" />
+<img width="1596" height="777" alt="image" src="https://github.com/user-attachments/assets/203c93dc-1854-4d9f-85b2-f6216834721d" />
+
 # Django Auth App con Tailwind CSS
 
 Aplicación web full-stack construida sobre Django que implementa un sistema de autenticación robusto y seguro. Utiliza un backend de autenticación personalizado ([`myauthapp.backends.EmailBackend`](src/myauthapp/backends.py)) que permite el login mediante email o nombre de usuario. El frontend está renderizado a través de plantillas de Django y estilizado con Tailwind CSS, compilado mediante un pipeline de Node.js gestionado por `django-tailwind` para un diseño moderno y responsivo. La configuración del proyecto es flexible, gestionando variables de entorno (`.env`) para claves sensibles.
