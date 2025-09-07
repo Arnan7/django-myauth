@@ -1,5 +1,6 @@
 <img width="1600" height="776" alt="image" src="https://github.com/user-attachments/assets/b72b8e79-6612-4649-b32f-c2dd2745b9be" />
 <img width="1596" height="777" alt="image" src="https://github.com/user-attachments/assets/203c93dc-1854-4d9f-85b2-f6216834721d" />
+<img width="1595" height="777" alt="image" src="https://github.com/user-attachments/assets/5956403c-ed1f-4eb2-afd2-93ed5f6330fc" />
 
 # Django Auth App con Tailwind CSS
 
